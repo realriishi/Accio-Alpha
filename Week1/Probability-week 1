@@ -1,0 +1,101 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "06854d5b",
+   "metadata": {},
+   "source": [
+    "## Q5 – Covariance\n",
+    "\n",
+    "Z depends on X directly and also through the term X·Y². Since X and Y are independent standard normals, a lot of cross terms vanish.\n",
+    "\n",
+    "After expanding carefully, the covariance works out to 2."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7f772dff",
+   "metadata": {},
+   "source": [
+    "## Q6 – Job Offers\n",
+    "\n",
+    "Instead of computing all the ways to get at least one offer, it’s much faster to compute the opposite case.\n",
+    "\n",
+    "P(no offers) = (0.8)^4.\n",
+    "So P(at least one offer) = 1 − (0.8)^4 ≈ 0.59.\n",
+    "\n",
+    "This made it clear that the 90% claim is way too optimistic."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e777b4c3",
+   "metadata": {},
+   "source": [
+    "## Q7 – Bit Errors\n",
+    "\n",
+    "Since the number of bits is large, using a normal approximation saves a lot of work.\n",
+    "\n",
+    "With the mean and variance plugged in, the probability of more than 120 errors comes out to about 0.015."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5ce746ec",
+   "metadata": {},
+   "source": [
+    "## Q9 – Bivariate Normal\n",
+    "\n",
+    "From the given mean vector and covariance matrix:\n",
+    "\n",
+    "- E[X] = E[Y] = 0\n",
+    "- Var(X) = Var(Y) = 1\n",
+    "- Cov(X, Y) = ρ\n",
+    "\n",
+    "This one is mostly reading values directly from the matrix."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0f44953d",
+   "metadata": {},
+   "source": [
+    "## Q10 – Conditional Distribution\n",
+    "\n",
+    "For jointly normal variables, the conditional distribution is also normal.\n",
+    "\n",
+    "Here, X given Y = y has:\n",
+    "- Mean = 1 + (y − 2)/3\n",
+    "- Variance = 11/3."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5b92cb4f",
+   "metadata": {},
+   "source": [
+    "## Q11 – Linear Combination\n",
+    "\n",
+    "Since Z = 3X − 2Y is a linear combination of Gaussian variables, Z is Gaussian as well.\n",
+    "\n",
+    "The variance comes out to 13, and the correlation with X is 1/√13."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fc3b946d",
+   "metadata": {},
+   "source": [
+    "## Q12 – Conditional Mean and Variance\n",
+    "\n",
+    "Applying the standard multivariate normal formulas:\n",
+    "\n",
+    "E[X | Y = y, Z = z] = (11y + 5z) / 14\n",
+    "Var(X | Y, Z) = 25 / 14."
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
